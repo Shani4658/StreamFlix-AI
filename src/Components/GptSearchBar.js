@@ -18,7 +18,7 @@ const GptSearchBar = () => {
       API_OPTIONS
     );
     const json = await data.json();
-    return json?.results;
+    return json?.results[0];
   };
   const handleGPTSearchClick = async () => {
     console.log(searchText.current.value);
@@ -27,7 +27,7 @@ const GptSearchBar = () => {
     const gptQuery =
       "Act as a Movie Recommendation system and suggest some movies for the query : " +
       searchText.current.value +
-      ". only give me names of 5 movies, comma separated like the example result given ahead. Example Result: Gadar, Sholay, Don, Golmaal, Koi Mil Gaya";
+      ". only give me names of 10 movies, comma separated like the example result given ahead. Example Result: Gadar, Sholay, Don, Golmaal, Koi Mil Gaya";
 
     const gptResult = await model.generateContent(gptQuery);
     

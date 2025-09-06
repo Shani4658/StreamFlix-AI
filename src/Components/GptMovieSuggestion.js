@@ -14,6 +14,8 @@ const GptMovieSuggestion = () => {
   */}
   // console.log(showMovie);
   const{movieResults , movieNames} = useSelector((store) => store.gpt);
+  console.log(movieResults);
+  // console.log(movieNames);
   {/*Now I will check if movieResults is null or not . If it is null then I will show Error page else I will show the data */}
   if(!movieNames){
     return <Error />
@@ -24,10 +26,13 @@ const GptMovieSuggestion = () => {
       {showMovie}
       <div className='m-2 p-2 text-white bg-black bg-opacity-90 rounded-lg'>
         
-        {movieNames.map((movie , index) => 
+        {/* {movieNames.map((movie , index) => 
           <MovieList key={index?.id} title={movie} movies={movieResults[index]} />
 
-        )}
+        )} */}
+
+        <MovieList title=" " movies={movieResults} />
+
       </div>
     </div>
   )
