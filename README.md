@@ -5,6 +5,21 @@ Netflix-AI is a modern AI-powered movie recommendation and streaming UI applicat
 Built using React.js, Tailwind CSS, Firebase Authentication, Redux Toolkit, and Google Gemini APIs.
 
 ---
+# 🌐 Live Demo
+
+🚀 https://netflix-gpt-o9j6.vercel.app/browse
+
+---
+
+# 🚀 Deployment
+
+The project is deployed using Vercel.
+
+Supported deployment platforms:
+
+- Vercel
+- Netlify
+- Render
 
 # 🚀 Features
 
