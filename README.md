@@ -1,136 +1,291 @@
-# Getting Started with Create React App
+# 🎬 Streamflix-AI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Netflix-AI is a modern AI-powered movie recommendation and streaming UI application inspired by Netflix. The project integrates TMDB APIs for movie data and Google Gemini APIs for intelligent movie suggestions based on user prompts.
 
-## Available Scripts
+Built using React.js, Tailwind CSS, Firebase Authentication, Redux Toolkit, and Google Gemini APIs.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🔐 Authentication
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* User Sign Up & Login
+* Firebase Authentication
+* Protected Browse Routes
+* Sign Out Functionality
+* User Profile Management
+* Form Validation
 
-### `npm test`
+## 🎥 Movie Browsing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Fetches real-time movie data from TMDB API
+* Now Playing Movies
+* Popular Movies
+* Trailer Playback
+* Movie Suggestions
+* Dynamic Movie Lists
+* Responsive Netflix-style UI
 
-### `npm run build`
+## 🤖 GPT Movie Recommendation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* AI-powered movie recommendations
+* Gemini AI-based search functionality
+* Smart movie suggestions based on prompts
+* Multi-language support
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎨 UI & UX
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Fully Responsive Design
+* Modern Netflix-inspired interface
+* Tailwind CSS styling
+* Auto-playing YouTube trailers
+* Smooth user experience
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# 🛠️ Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Frontend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* React.js
+* JavaScript
+* Tailwind CSS
+* Redux Toolkit
+* React Router DOM
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Backend & APIs
 
-## Learn More
+* Firebase Authentication
+* TMDB API
+* Google Gemini API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Firebase Hosting / Vercel / Netlify
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# 📂 Project Structure
 
-### Analyzing the Bundle Size
+```bash
+src/
+│
+├── components/
+├── hooks/
+├── utils/
+├── store/
+├── pages/
+├── constants/
+└── assets/
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+# ⚙️ Installation & Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 1️⃣ Clone the Repository
 
-### Advanced Configuration
+```bash
+git clone https://github.com/your-username/netflix-gpt.git
+cd netflix-gpt
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 2️⃣ Install Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+npm install
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 3️⃣ Setup Firebase
 
+1. Go to Firebase Console
+2. Create a new project
+3. Enable Authentication
+4. Copy Firebase configuration
+5. Add configuration to your project
 
-# Netflix-GPT
-- Create React App
-- Configured TailwindCSS
-- Header
+---
 
-# Features
--SignIn/LogIn
-    -SignIn/SignUp Form
-    -Redirect to Browse Page
-    -Routing of our app
-    -Form Validation
-    -useRef Hook
-    -firebase setup
-    -deploying our app to production
-    -create signUp User Account
-    -implement sign In user API
-    -created Redux Store with userSlice
-    -Implement Sign out feature
-    -Update profile api call
-    -BugFix: Sign up user displayName and profile picture update
-    -BugFix: If the user is not logged in re-direct to '/browse' to login page
-    -Unsubscribing onAuthStateChanged callback()
-    -Adding constant file to the project
-    -Register TMDB API & create an app & get access token
-    -Get Data from TMDB now playing movies list API
-    -Custom Hook for Now Playing Movies
-    -Update Store with movie Data
-    -Planning for mainConatiner and SecondaryContainer
-    -Fetch Data for Trailer Video
-    -Update Store with Trailer Video Data
-    -Embedded the Youtube video and amek it auto play and mute
-    -Tailwind classes to make Main Conatiner look awesome
-    -Build secondary component
-    -Creating movie suggestions
-    -Build movieList
-    -Build movieCard
-    -TMDB img cdn url
-    -Made browse page amazing with tailwindcss
-    -usePopular() custom hook.
-    -GPT search feature : Created GPTSearch Page . On clicking GPTSearch Button on Browse Page => it will take use to GptSearch Page . There we built GptSearch Bar and Search Button.
-    -Implemented multi-lingual feature
-    -Integrating GPT API
-        - visit platform.openAI.com
-            -> Go to Profile 
-                -> Click on 'View API Keys'
-        -visit npm openai
-            ->Run in terminal : "npm install openai"
-    
-    
-    
+## 4️⃣ Setup TMDB API
 
-    
--Browse Page(After Authentication)
-    -Header
-    -Main Movie
-        -Trailer Playing
-        -Title & Description
-        -Movies Suggestion
-            -Movies List * N
--Netflix-GPT
-    -Search-bar
-    -Movie Suggestion
+1. Visit TMDB website
+2. Create an account
+3. Generate API Access Token
+4. Add token inside constants/config file
 
-    -Building gptMovieSuggestion 
+---
+
+## 5️⃣ Setup Gemini API
+
+1. Visit Google AI Studio
+2. Generate Gemini API Key
+3. Add API key to environment variables
+
+Install OpenAI package:
+
+```bash
+npm install @google/generative-ai
+```
+
+---
+
+# ▶️ Running the Project
+
+## Start Development Server
+
+```bash
+npm start
+```
+
+Open:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+# 🧠 Application Flow
+
+## Authentication Flow
+
+* User Sign Up/Login
+* Firebase verifies credentials
+* Redirect to Browse Page
+* Protected routes for authenticated users
+
+## Browse Page
+
+* Header Navigation
+* Main Featured Movie
+* Auto-playing Trailer
+* Movie Categories
+* Movie Cards
+* Dynamic Suggestions
+
+## AI Search Flow
+
+1. User enters movie mood or prompt
+2. Gemini AI processes the prompt
+3. Suggested movie names are generated
+4. TMDB fetches movie details
+5. Movies are displayed dynamically
+
+---
+
+# 📸 Key Features Breakdown
+
+## 🎞️ Main Container
+
+* Featured movie banner
+* Movie title and description
+* Embedded YouTube trailer
+* Auto-play and mute functionality
+
+## 🎬 Secondary Container
+
+* Multiple movie categories
+* Horizontally scrollable movie lists
+* Dynamic rendering using reusable components
+
+## 🤖 AI Search Page
+
+* Gemini AI-powered movie recommendations
+* Search bar and suggestion system
+* Multi-language search support
+
+---
+
+# 🔥 Custom Hooks Used
+
+* `useNowPlayingMovies()`
+* `usePopularMovies()`
+* `useMovieTrailer()`
+* `useMovieSuggestions()`
+
+These hooks help in maintaining clean and reusable code.
+
+---
+
+# 🌍 Multi-Language Support
+
+The project supports multiple languages for GPT search functionality and UI enhancement.
+
+---
+
+# 🧰 Redux Store
+
+Redux Toolkit is used for:
+
+* User Authentication State
+* Movie Data Management
+* Trailer Data
+* AI Search Results
+* Application State Handling
+
+---
+
+# 🎯 Future Improvements
+
+* Add Watchlist Feature
+* Add Movie Ratings & Reviews
+* Add Voice-based AI Search
+* Add User Recommendation History
+* Add Dark/Light Theme Toggle
+* Add Personalized AI Recommendations
+* Add Streaming Platform Filtering
+
+---
+
+# 📦 Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+# 🚀 Deployment
+
+The project can be deployed on:
+
+* Vercel
+* Netlify
+* Firebase Hosting
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push to your branch
+5. Open a Pull Request
+
+---
+
+# 📄 License
+
+This project is built for educational and learning purposes.
+
+---
+
+# 👨‍💻 Author
+
+**Shani Dev Kashyap**
+
+Frontend Developer | React.js Enthusiast | AI & Web Development Learner
+
+---
+
+# ⭐ Support
+
+If you liked this project, give it a ⭐ on GitHub.
