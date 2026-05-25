@@ -87,7 +87,7 @@ src/
 ## 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/netflix-gpt.git
+git clone https://github.com/Shani4658/netflix-gpt.git
 cd netflix-gpt
 ```
 
